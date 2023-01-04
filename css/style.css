@@ -1,0 +1,192 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: ease-in-out all .3s;
+}
+
+.menu ul li a:hover {
+    color: #000;
+}
+
+
+
+
+.cars-content {
+    padding: 100px 0;
+}
+
+.cars-content h1 {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cars-content h2 {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.cars-content p {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 25px;
+  border-radius: 50px;
+  border: 1px solid red;
+  transition: ease-in-out all .3s;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #000;
+    border-color: #ffffff;
+}
+
+.cards {
+    position: relative;
+    border: 1px solid red;
+    transition: ease-in-out all .3s;
+    border-radius: 10px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.cards:hover {
+    border-color: #ffffff;
+}
+
+.cards-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cards-image a {
+    display: block;
+}
+
+.cards-image a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards-text {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 140px;
+    padding: 10px;
+}
+
+.cards-text-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cards-text-sub-title p {
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 18px;
+}
+
+.cards-button {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+
+/* Responsive */
+/* 1024'e kadar olan ekranlar için */
+@media screen and (max-width: 1024px) {
+    .cars-content {
+        padding: 30px 0;
+    }
+    .cars-content h1 {
+        font-size: 54px;
+    }
+    .cars-content h2 {
+        font-size: 48px;
+    }
+    .cars-content p {
+        font-size: 16px;
+    }
+}
+
+/* 768'e kadar olan ekranlar için */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        justify-content: flex-start;
+    }
+}
+
+/* 425'e kadar olan ekranlar için */
+@media screen and (max-width: 425px) {
+    .logo {
+        text-align: center;
+    }
+    .menu ul {
+       flex-direction: column;
+       justify-content: center;
+    }
+    .menu ul li {
+        margin: 0;
+    }
+    .menu ul li a {
+        padding: 10px 0;
+        font-size: 24px;
+    }
+}
